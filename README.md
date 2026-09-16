@@ -1,91 +1,126 @@
-🚀 HireMind.AI
-AI-powered career preparation platform for interviews, resumes, performance analysis, and personalized learning roadmaps.
+# 🚀 HireMind.AI
 
-HireMind.AI is a full-stack AI career preparation platform designed to help students and job seekers prepare for the complete hiring journey.
+> **AI-powered career preparation platform for interviews, resumes, performance analysis, and personalized learning roadmaps.**
 
-The platform brings together AI-powered interview practice, resume building, interview performance analysis, and personalized learning roadmaps in a single application.
+**HireMind.AI** is a full-stack AI career preparation platform designed to help students and job seekers prepare for the complete hiring journey.
 
-It uses a microservices-oriented backend, LangChain/LangGraph-based AI workflows, specialized AI agents, Redis caching, MongoDB persistence, Firebase authentication, and Razorpay payments.
+The platform brings together **AI-powered interview practice, resume building, interview performance analysis, and personalized learning roadmaps** in a single application.
 
-✨ Features
-🎤 AI Interview Simulator
+It uses a **microservices-oriented backend**, **LangChain/LangGraph-based AI workflows**, specialized AI agents, Redis caching, MongoDB persistence, Firebase authentication, and Razorpay payments.
+
+---
+
+## ✨ Features
+
+### 🎤 AI Interview Simulator
+
 Practice realistic interview sessions with AI-powered interview workflows.
 
-HR and behavioral interviews
-Technical interviews
-Coding interview support
-AI-generated interview questions
-Timed interview sessions
-Integrated code editor
-Interview session management
-AI-powered answer evaluation
-Automated interview feedback
-Performance scoring
-Interview reports and analysis
-🤖 AI Agent Architecture
+- HR and behavioral interviews
+- Technical interviews
+- Coding interview support
+- AI-generated interview questions
+- Timed interview sessions
+- Integrated code editor
+- Interview session management
+- AI-powered answer evaluation
+- Automated interview feedback
+- Performance scoring
+- Interview reports and analysis
+
+---
+
+### 🤖 AI Agent Architecture
+
 Different career-related tasks are handled by specialized AI agents.
 
-AI Agent	Responsibility
-📝 Resume Agent	Assists with resume generation and improvement
-🎤 Interview Agent	Generates and conducts interview questions
-📊 Feedback Agent	Evaluates candidate responses and generates feedback
-🗺️ Roadmap Agent	Generates personalized learning roadmaps
-📚 Resource Agent	Finds relevant learning resources
+| AI Agent | Responsibility |
+|---|---|
+| 📝 Resume Agent | Assists with resume generation and improvement |
+| 🎤 Interview Agent | Generates and conducts interview questions |
+| 📊 Feedback Agent | Evaluates candidate responses and generates feedback |
+| 🗺️ Roadmap Agent | Generates personalized learning roadmaps |
+| 📚 Resource Agent | Finds relevant learning resources |
+
 This modular approach makes it easier to extend the platform with additional AI capabilities.
 
-📄 AI Resume Builder
+---
+
+### 📄 AI Resume Builder
+
 Create and manage professional resumes directly within HireMind.AI.
 
-Structured resume editor
-ATS-oriented resume format
-Resume preview
-PDF generation
-AI-assisted resume creation
-Resume data management
-📊 Interview Analytics
+- Structured resume editor
+- ATS-oriented resume format
+- Resume preview
+- PDF generation
+- AI-assisted resume creation
+- Resume data management
+
+---
+
+### 📊 Interview Analytics
+
 Track interview preparation and performance from a centralized dashboard.
 
 The platform provides information such as:
 
-Total interviews
-Questions answered
-Completed interviews
-Average interview score
-HR/behavioral performance
-Technical performance
-Interview history
-Performance visualizations
-🗺️ Personalized Learning Roadmaps
+- Total interviews
+- Questions answered
+- Completed interviews
+- Average interview score
+- HR/behavioral performance
+- Technical performance
+- Interview history
+- Performance visualizations
+
+---
+
+### 🗺️ Personalized Learning Roadmaps
+
 Generate learning plans based on a candidate's career goal and current skills.
 
 The roadmap system can:
 
-Generate structured learning paths
-Divide goals into learning modules
-Recommend learning resources
-Fetch relevant external learning resources
-Present resources alongside the generated roadmap
-The roadmap service integrates with the YouTube API to provide learning resources.
+- Generate structured learning paths
+- Divide goals into learning modules
+- Recommend learning resources
+- Fetch relevant external learning resources
+- Present resources alongside the generated roadmap
 
-🔐 Authentication & User Management
+The roadmap service integrates with the **YouTube API** to provide learning resources.
+
+---
+
+### 🔐 Authentication & User Management
+
 HireMind.AI uses Firebase for authentication and Firebase Admin for backend verification.
 
-Firebase Authentication
-Firebase Admin SDK
-Cookie-based authentication
-Protected backend routes
-User session management
-User data persistence with MongoDB
-💳 Subscription & Billing
+- Firebase Authentication
+- Firebase Admin SDK
+- Cookie-based authentication
+- Protected backend routes
+- User session management
+- User data persistence with MongoDB
+
+---
+
+### 💳 Subscription & Billing
+
 Premium functionality is supported through Razorpay integration.
 
-Razorpay payment integration
-Payment processing
-Billing records
-User plan management
-🏗️ System Architecture
-HireMind.AI follows a microservices-oriented backend architecture.
+- Razorpay payment integration
+- Payment processing
+- Billing records
+- User plan management
 
+---
+
+# 🏗️ System Architecture
+
+HireMind.AI follows a **microservices-oriented backend architecture**.
+
+```text
                          ┌─────────────────────┐
                          │     React + Vite    │
                          │     Frontend UI     │
@@ -132,10 +167,17 @@ HireMind.AI follows a microservices-oriented backend architecture.
                     │     MongoDB + Redis     │
                     │ Persistence + Caching   │
                     └─────────────────────────┘
-🧠 AI Architecture
-The AI functionality is organized into structured workflows using LangChain and LangGraph.
+```
 
-Interview Workflow
+---
+
+# 🧠 AI Architecture
+
+The AI functionality is organized into structured workflows using **LangChain** and **LangGraph**.
+
+## Interview Workflow
+
+```text
 User starts interview
         ↓
 Interview Agent
@@ -151,9 +193,15 @@ Feedback Agent
 Performance Analysis
         ↓
 Interview Report
+```
+
 The workflow separates question generation, response evaluation, feedback, and reporting into dedicated stages.
 
-Roadmap Workflow
+---
+
+## Roadmap Workflow
+
+```text
 Career Goal
      ↓
 Current Skills
@@ -167,45 +215,66 @@ Resource Agent
 External Learning Resources
      ↓
 Personalized Roadmap
-🛠️ Tech Stack
-Frontend
-React.js
-Vite
-Redux Toolkit
-React Router
-Axios
-Recharts
-Monaco Editor
-Firebase Authentication
-Motion
-Backend
-Node.js
-Express.js
-MongoDB
-Mongoose
-Redis
-Docker
-REST APIs
-Microservices Architecture
-AI
-LangChain
-LangGraph
-Groq
-AI Agents
-Authentication & Payments
-Firebase Authentication
-Firebase Admin SDK
-Razorpay
-External Services
-YouTube Data API
-Developer Tools
-Git
-GitHub
-Docker
-npm
-ESLint
-Nodemon
-📁 Project Structure
+```
+
+---
+
+# 🛠️ Tech Stack
+
+## Frontend
+
+- React.js
+- Vite
+- Redux Toolkit
+- React Router
+- Axios
+- Recharts
+- Monaco Editor
+- Firebase Authentication
+- Motion
+
+## Backend
+
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- Redis
+- Docker
+- REST APIs
+- Microservices Architecture
+
+## AI
+
+- LangChain
+- LangGraph
+- Groq
+- AI Agents
+
+## Authentication & Payments
+
+- Firebase Authentication
+- Firebase Admin SDK
+- Razorpay
+
+## External Services
+
+- YouTube Data API
+
+## Developer Tools
+
+- Git
+- GitHub
+- Docker
+- npm
+- ESLint
+- Nodemon
+
+---
+
+# 📁 Project Structure
+
+```text
 HireMind.AI/
 │
 ├── backend/
@@ -242,113 +311,177 @@ HireMind.AI/
 │
 ├── .gitignore
 └── README.md
-⚙️ Getting Started
-Prerequisites
+```
+
+---
+
+# ⚙️ Getting Started
+
+## Prerequisites
+
 Make sure the following are installed:
 
-Node.js
-npm
-Docker Desktop
-MongoDB
-Git
-1. Clone the Repository
+- Node.js
+- npm
+- Docker Desktop
+- MongoDB
+- Git
+
+---
+
+## 1. Clone the Repository
+
+```bash
 git clone https://github.com/harshp970/HireMind.AI.git
 cd HireMind.AI
-2. Install Frontend Dependencies
+```
+
+---
+
+## 2. Install Frontend Dependencies
+
+```bash
 cd frontend
 npm install
+```
+
 Start the frontend:
 
+```bash
 npm run dev
+```
+
 The frontend runs on the Vite development server.
 
-3. Install Backend Dependencies
+---
+
+## 3. Install Backend Dependencies
+
 Each backend service maintains its own dependencies.
 
 For example:
 
+```bash
 cd backend/services/auth-service
 npm install
 npm run dev
+```
+
 Install dependencies for the other services in the same way.
 
 The backend consists of:
 
+```text
 Gateway             → 8000
 Auth Service        → 8001
 Interview Service   → 8002
 Resume Service      → 8003
 Roadmap Service     → 8004
 Billing Service     → 8005
-4. Start Redis
+```
+
+---
+
+## 4. Start Redis
+
 From the backend directory:
 
+```bash
 cd backend
 docker compose up -d
+```
+
 Redis is exposed on:
 
+```text
 localhost:6379
-🔑 Environment Variables
-Each service uses its own .env file.
+```
+
+---
+
+# 🔑 Environment Variables
+
+Each service uses its own `.env` file.
 
 Example configuration files are provided as:
 
+```text
 backend/services/auth-service/.env.example
 backend/services/billing-service/.env.example
 backend/services/interview-service/.env.example
 backend/services/resume-service/.env.example
 backend/services/roadmap-service/.env.example
 frontend/.env.example
+```
+
 The example files contain placeholders only.
 
 Typical configuration includes:
 
+```env
 MONGODB_URL="your_mongodb_connection_string"
 REDIS_URL="redis://localhost:6379"
 GROQ_API_KEY="your_groq_api_key"
 YOUTUBE_API_KEY="your_youtube_api_key"
 RAZORPAY_KEY_ID="your_razorpay_key_id"
 RAZORPAY_KEY_SECRET="your_razorpay_key_secret"
+```
+
 Frontend configuration includes the required Firebase and Razorpay public configuration.
 
 For Firebase Admin authentication, configure the required service-account credentials locally using the provided example file as a reference.
 
-Never commit real API keys, .env files, or Firebase service-account credentials to GitHub.
+> **Never commit real API keys, `.env` files, or Firebase service-account credentials to GitHub.**
 
-🔒 Security
+---
+
+# 🔒 Security
+
 Sensitive configuration is kept outside the source code through environment variables and local credential files.
 
-The repository's .gitignore excludes:
+The repository's `.gitignore` excludes:
 
+```text
 .env
 node_modules/
 serviceAccountKey.json
 .DS_Store
+```
+
 For production deployments:
 
-Use environment variables or a secrets manager.
-Never commit API keys.
-Never commit Firebase service-account credentials.
-Rotate credentials immediately if they are accidentally exposed.
-Use separate credentials for development and production.
-🚀 Future Improvements
+- Use environment variables or a secrets manager.
+- Never commit API keys.
+- Never commit Firebase service-account credentials.
+- Rotate credentials immediately if they are accidentally exposed.
+- Use separate credentials for development and production.
+
+---
+
+# 🚀 Future Improvements
+
 Potential future improvements include:
 
-Real-time voice interviews
-Resume-to-job matching
-Job description analysis
-LinkedIn profile optimization
-Additional programming languages for coding interviews
-Adaptive interview difficulty
-More advanced interview analytics
-Personalized job recommendations
-Real-time AI interviewer
-Production-grade monitoring and observability
-🎯 Why HireMind.AI?
+- Real-time voice interviews
+- Resume-to-job matching
+- Job description analysis
+- LinkedIn profile optimization
+- Additional programming languages for coding interviews
+- Adaptive interview difficulty
+- More advanced interview analytics
+- Personalized job recommendations
+- Real-time AI interviewer
+- Production-grade monitoring and observability
+
+---
+
+# 🎯 Why HireMind.AI?
+
 The hiring process involves much more than interview preparation alone.
 
 HireMind.AI combines several preparation stages into one platform:
 
+```text
         Resume
            ↓
       Skill Analysis
@@ -362,8 +495,21 @@ HireMind.AI combines several preparation stages into one platform:
  Performance Analytics
            ↓
  Better Interview Preparation
-The goal is to provide students and job seekers with a unified platform for continuous career preparation.
+```
 
+The goal is to provide students and job seekers with a unified platform for **continuous career preparation**.
 
-⭐ Project
+---
+
+# 👨‍💻 Author
+
+**Ayush Srivastava**
+
+B.Tech Computer Science Engineering  
+Full-Stack Developer | AI & Backend Enthusiast
+
+---
+
+## ⭐ Project
+
 If you find HireMind.AI useful, consider giving the repository a ⭐ on GitHub.
